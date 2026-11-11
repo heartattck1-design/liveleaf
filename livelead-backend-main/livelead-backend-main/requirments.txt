@@ -1,0 +1,1 @@
+Flask Flask-Migrate flask-restful flask-jwt-extended flask-socketio eventlet google-genai

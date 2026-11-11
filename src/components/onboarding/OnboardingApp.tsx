@@ -6,6 +6,8 @@ import { AuthLanding } from './AuthLanding';
 import { ProjectBriefScreen } from './ProjectBriefScreen';
 import { SignUpWizard } from './SignUpWizard';
 import { SubscriptionPlansScreen } from './SubscriptionPlansScreen';
+import { PlantSetupScreen } from './PlantSetupScreen';
+import { EspConnectionScreen } from './EspConnectionScreen';
 import { DEFAULT_USER, type OnboardingStep, type UserProfile } from './OnboardingState';
 
 export function OnboardingApp() {
@@ -25,8 +27,8 @@ export function OnboardingApp() {
         return (
           <LoginPage
             onLogin={() => {
-              setUser((current) => ({ ...current, email: current.email || '' }));
-              setStep('dashboard');
+              setUser((current) => ({ ...current, email: current.email || 'Grower' }));
+              setStep('plant-setup');
             }}
           />
         );
@@ -46,20 +48,36 @@ export function OnboardingApp() {
           <SubscriptionPlansScreen
             onSelectFree={() => {
               setUser((current) => ({ ...current, planTier: 'Free' }));
-              setStep('dashboard');
+              setStep('plant-setup');
             }}
             onSelectPremium={() => {
               setUser((current) => ({ ...current, planTier: 'Premium' }));
+              setStep('plant-setup');
+            }}
+          />
+        );
+      case 'plant-setup':
+        return (
+          <PlantSetupScreen
+            onComplete={() => {
+              setStep('esp-waiting');
+            }}
+          />
+        );
+      case 'esp-waiting':
+        return (
+          <EspConnectionScreen
+            onConnected={() => {
               setStep('dashboard');
             }}
           />
         );
       case 'dashboard':
-        return <App />;
+        return <App user={user} onSignOut={() => setStep('auth-landing')} />;
       default:
         return null;
     }
-  }, [step]);
+  }, [step, user]);
 
   return <>{currentView}</>;
 }

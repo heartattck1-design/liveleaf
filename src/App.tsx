@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import { LoginPage } from './components/auth/LoginPage';
 import { NotificationBanner } from './components/common/NotificationBanner';
 import { PipelineVisualizer } from './components/analytics/PipelineVisualizer';
 import { TimeSeriesChart } from './components/analytics/TimeSeriesChart';
@@ -9,12 +8,18 @@ import { HeroStatusCard } from './components/dashboard/HeroStatusCard';
 import { ModeSwitcher } from './components/dashboard/ModeSwitcher';
 import { QuickActionsPanel } from './components/dashboard/QuickActionsPanel';
 import { SensorQuadGrid } from './components/dashboard/SensorQuadGrid';
+import { AiChatPanel } from './components/dashboard/AiChatPanel';
 import { useTelemetry } from './hooks/useTelemetry';
+import { type UserProfile } from './components/onboarding/OnboardingState';
 
 type ThemeMode = 'light' | 'dark';
 
-function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+interface AppProps {
+  user?: UserProfile;
+  onSignOut?: () => void;
+}
+
+function App({ user, onSignOut }: AppProps) {
   const [theme, setTheme] = useState<ThemeMode>(() => {
     if (typeof window === 'undefined') {
       return 'light';
@@ -43,10 +48,6 @@ function App() {
     toggleAutoStream,
   } = useTelemetry();
 
-  if (!isLoggedIn) {
-    return <LoginPage onLogin={() => setIsLoggedIn(true)} />;
-  }
-
   return (
     <div
       className={
@@ -62,7 +63,9 @@ function App() {
           isStreaming={isAutoStreaming}
           onReset={handleResetSensors}
           onToggleStream={toggleAutoStream}
-          onSignOut={() => setIsLoggedIn(false)}
+          onSignOut={onSignOut || (() => {})}
+          userName={user?.name || 'Grower'}
+          planTier={user?.planTier || 'Free'}
         />
 
         <QuickActionsPanel />
@@ -82,10 +85,14 @@ function App() {
             <HeroStatusCard telemetry={telemetry} />
             <SensorQuadGrid telemetry={telemetry} />
           </main>
-        ) : (
+        ) : activeTab === 'analytics' ? (
           <main className="mt-6 grid gap-6 lg:grid-cols-[1.6fr_0.8fr]">
             <TimeSeriesChart range={timeRange} onRangeChange={setTimeRange} />
             <PipelineVisualizer />
+          </main>
+        ) : (
+          <main className="mt-6">
+            <AiChatPanel theme={theme} />
           </main>
         )}
       </div>

@@ -9,6 +9,8 @@ interface HeaderBarProps {
   onReset: () => void;
   onToggleStream: () => void;
   onSignOut: () => void;
+  userName?: string;
+  planTier?: string;
 }
 
 export function HeaderBar({
@@ -18,20 +20,34 @@ export function HeaderBar({
   onReset,
   onToggleStream,
   onSignOut,
+  userName,
+  planTier,
 }: HeaderBarProps) {
   const isDark = theme === 'dark';
 
   return (
     <header
       className={[
-        'flex items-center justify-between gap-4 rounded-3xl px-4 py-3 shadow-sm backdrop-blur-sm sm:px-5',
+        'flex flex-col gap-4 rounded-3xl p-4 shadow-sm backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between sm:px-5',
         isDark
           ? 'border border-slate-700 bg-slate-900/80 text-slate-100'
           : 'border border-slate-200 bg-white/80 text-slate-800',
       ].join(' ')}
     >
-      <div className="flex min-w-0 flex-shrink-0 items-center">
+      <div className="flex flex-wrap items-center gap-4">
         <LiveleafLogo />
+        {userName && (
+          <div className="flex items-center gap-2">
+            <span className={['text-sm font-medium', isDark ? 'text-slate-300' : 'text-slate-600'].join(' ')}>
+              Welcome back, <strong className={isDark ? 'text-emerald-400' : 'text-emerald-700'}>{userName}</strong>! 🌿
+            </span>
+            {planTier && (
+              <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-600 border border-emerald-500/20">
+                {planTier}
+              </span>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="ml-auto flex items-center gap-3">

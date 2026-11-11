@@ -1,4 +1,4 @@
-export type ViewMode = 'user-friendly' | 'analytics';
+export type ViewMode = 'user-friendly' | 'analytics' | 'ai-chat';
 export type TimeRange = '24h' | '7d' | '30d';
 export type NotificationType = 'success' | 'warning' | 'info';
 

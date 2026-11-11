@@ -1,0 +1,2531 @@
+[
+  {
+    "id": "1794345726542",
+    "timestamp": 1794345726542,
+    "request": {
+      "id": "1794345726483",
+      "name": "New Request",
+      "method": "GET",
+      "url": "127.0.0.1:5000",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: Failed to parse URL from 127.0.0.1:5000",
+      "time": 56,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794345734822",
+    "timestamp": 1794345734822,
+    "request": {
+      "id": "1794345734792",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "29",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 21:22:14 GMT"
+      },
+      "body": "{\n  \"msg\": \"hello, World!\"\n}\n",
+      "time": 27,
+      "size": 29,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794345798520",
+    "timestamp": 1794345798520,
+    "request": {
+      "id": "1794345798506",
+      "name": "New Request (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/user/signup/",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"test\",\n  \"email\": \"test@test.test\",\n  \"password\": \"test\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 21:23:18 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 13,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794345843869",
+    "timestamp": 1794345843869,
+    "request": {
+      "id": "1794345843856",
+      "name": "New Request (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/user/signup/",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"test\",\n  \"email\": \"test@test.test\",\n  \"password\": \"test\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 21:24:03 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 12,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794346201662",
+    "timestamp": 1794346201662,
+    "request": {
+      "id": "1794346201637",
+      "name": "New Request (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/user/signup",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"test\",\n  \"email\": \"test@test.test\",\n  \"password\": \"test\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 201,
+      "statusText": "CREATED",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "324",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 21:30:01 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0\",\n    \"userid\": 1\n  },\n  \"msg\": \"Signup successful\"\n}\n",
+      "time": 24,
+      "size": 324,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347580695",
+    "timestamp": 1794347580695,
+    "request": {
+      "id": "1794347580381",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "225",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 21:53:00 GMT"
+      },
+      "body": "{\n  \"csv_url\": \"/download/logs/5704918d_log_metrics.csv\",\n  \"device_response\": {\n    \"req_id\": \"431066d0-ef68-4c17-8aa7-e34cf544246b\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'push_sensor_log' executed successfully\"\n}\n",
+      "time": 312,
+      "size": 225,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347619767",
+    "timestamp": 1794347619767,
+    "request": {
+      "id": "1794347619759",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/5704918d_log_metrics.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: Request with GET/HEAD method cannot have body.",
+      "time": 7,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347624823",
+    "timestamp": 1794347624823,
+    "request": {
+      "id": "1794347624809",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/5704918d_log_metrics.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "INTERNAL SERVER ERROR",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "17935",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 21:53:44 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n  <head>\n    <title>NameError: name &#39;send_from_directory&#39; is not defined\n // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\">\n    <link rel=\"shortcut icon\"\n        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>\n    <script>\n      var CONSOLE_MODE = false,\n          EVALEX = true,\n          EVALEX_TRUSTED = false,\n          SECRET = \"aj4mIKMUNMEADNfsCGCB\";\n    </script>\n  </head>\n  <body style=\"background-color: #fff\">\n    <div class=\"debugger\">\n<h1>NameError</h1>\n<div class=\"detail\">\n  <p class=\"errormsg\">NameError: name &#39;send_from_directory&#39; is not defined\n</p>\n</div>\n<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>\n<div class=\"traceback\">\n  <h3></h3>\n  <ul><li><div class=\"frame\" id=\"frame-140638229485888\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1514</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)\n<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140638229486208\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask_cors/extension.py\"</cite>,\n      line <em class=\"line\">206</em>,\n      in <code class=\"function\">wrapped_function</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>if options.intercept_exceptions and hasattr(app, &#34;handle_exception&#34;):</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>app_any: Any = app</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>def _after_request_decorator(f: Callable[..., Any]) -&gt; Callable[..., Response]:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>def wrapped_function(*args: Any, **kwargs: Any) -&gt; Response:</pre>\n<pre class=\"line current\"><span class=\"ws\">                    </span>return cors_after_request(app_any.make_response(f(*args, **kwargs)))\n<span class=\"ws\">                    </span>                                                ^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>return wrapped_function</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>app_any.handle_exception = _after_request_decorator(app_any.handle_exception)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>app_any.handle_user_exception = _after_request_decorator(app_any.handle_user_exception)</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140638229486848\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1511</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>error: BaseException | None = None</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()\n<span class=\"ws\">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140638229487008\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">919</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line current\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)\n<span class=\"ws\">            </span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>self,</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>rv: ft.ResponseReturnValue | HTTPException,</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140638229487168\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask_cors/extension.py\"</cite>,\n      line <em class=\"line\">206</em>,\n      in <code class=\"function\">wrapped_function</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>if options.intercept_exceptions and hasattr(app, &#34;handle_exception&#34;):</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>app_any: Any = app</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>def _after_request_decorator(f: Callable[..., Any]) -&gt; Callable[..., Response]:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>def wrapped_function(*args: Any, **kwargs: Any) -&gt; Response:</pre>\n<pre class=\"line current\"><span class=\"ws\">                    </span>return cors_after_request(app_any.make_response(f(*args, **kwargs)))\n<span class=\"ws\">                    </span>                                                ^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>return wrapped_function</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>app_any.handle_exception = _after_request_decorator(app_any.handle_exception)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>app_any.handle_user_exception = _after_request_decorator(app_any.handle_user_exception)</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140638229487328\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">917</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>rv = self.dispatch_request()\n<span class=\"ws\">                </span>     ^^^^^^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140638229487488\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">902</em>,\n      in <code class=\"function\">dispatch_request</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>and req.method == &#34;OPTIONS&#34;</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>):</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>return self.make_default_options_response()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span># otherwise dispatch to the handler for that endpoint</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]\n<span class=\"ws\">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def full_dispatch_request(self) -&gt; Response:</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>&#34;&#34;&#34;Dispatches the request and on top of that performs request</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>pre and postprocessing as well as HTTP exception catching and</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>error handling.</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140638229487648\">\n  <h4>File <cite class=\"filename\">\"/home/mohamed/coding/liveleaf-backend/app/main.py\"</cite>,\n      line <em class=\"line\">390</em>,\n      in <code class=\"function\">download_log_file</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\"></span>@app.route(&#39;/download/logs/&lt;path:filename&gt;&#39;, methods=[&#39;GET&#39;])</pre>\n<pre class=\"line before\"><span class=\"ws\"></span>def download_log_file(filename):</pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>&#34;&#34;&#34; Serve the log file as an attachment to be downloaded &#34;&#34;&#34;</pre>\n<pre class=\"line before\"><span class=\"ws\">    </span># Ensure nobody is using directory traversal hacks (e.g. ../../)</pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>safe_filename = os.path.basename(filename)</pre>\n<pre class=\"line current\"><span class=\"ws\">    </span>return send_from_directory(LOGS_DIR, safe_filename, as_attachment=True)\n<span class=\"ws\">    </span>       ^^^^^^^^^^^^^^^^^^^</pre>\n<pre class=\"line after\"><span class=\"ws\"></span>@app.route(&#39;/device/command&#39;, methods=[&#39;POST&#39;])</pre>\n<pre class=\"line after\"><span class=\"ws\"></span>@jwt_required()</pre>\n<pre class=\"line after\"><span class=\"ws\"></span>def send_command_to_device():</pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>user_id = get_jwt_identity()</pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>data = request.get_json(silent=True) or {}</pre></div>\n</div>\n</ul>\n  <blockquote>NameError: name &#39;send_from_directory&#39; is not defined\n</blockquote>\n</div>\n\n<div class=\"plain\">\n    <p>\n      This is the Copy/Paste friendly version of the traceback.\n    </p>\n    <textarea cols=\"50\" rows=\"10\" name=\"code\" readonly>Traceback (most recent call last):\n  File &#34;/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py&#34;, line 1514, in wsgi_app\n    response = self.handle_exception(e)\n  File &#34;/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask_cors/extension.py&#34;, line 206, in wrapped_function\n    return cors_after_request(app_any.make_response(f(*args, **kwargs)))\n                                                    ~^^^^^^^^^^^^^^^^^\n  File &#34;/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py&#34;, line 1511, in wsgi_app\n    response = self.full_dispatch_request()\n  File &#34;/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py&#34;, line 919, in full_dispatch_request\n    rv = self.handle_user_exception(e)\n  File &#34;/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask_cors/extension.py&#34;, line 206, in wrapped_function\n    return cors_after_request(app_any.make_response(f(*args, **kwargs)))\n                                                    ~^^^^^^^^^^^^^^^^^\n  File &#34;/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py&#34;, line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File &#34;/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py&#34;, line 902, in dispatch_request\n    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File &#34;/home/mohamed/coding/liveleaf-backend/app/main.py&#34;, line 390, in download_log_file\n    return send_from_directory(LOGS_DIR, safe_filename, as_attachment=True)\n           ^^^^^^^^^^^^^^^^^^^\nNameError: name &#39;send_from_directory&#39; is not defined\n</textarea>\n</div>\n<div class=\"explanation\">\n  The debugger caught an exception in your WSGI application.  You can now\n  look at the traceback which led to the error.  <span class=\"nojavascript\">\n  If you enable JavaScript you can also use additional features such as code\n  execution (if the evalex feature is enabled), automatic pasting of the\n  exceptions and much more.</span>\n</div>\n      <div class=\"footer\">\n        Brought to you by <strong class=\"arthur\">DON'T PANIC</strong>, your\n        friendly Werkzeug powered traceback interpreter.\n      </div>\n    </div>\n\n    <div class=\"pin-prompt\">\n      <div class=\"inner\">\n        <h3>Console Locked</h3>\n        <p>\n          The console is locked and needs to be unlocked by entering the PIN.\n          You can find the PIN printed out on the standard output of your\n          shell that runs the server.\n        <form>\n          <p>PIN:\n            <input type=text name=pin size=14>\n            <input type=submit name=btn value=\"Confirm Pin\">\n        </form>\n      </div>\n    </div>\n  </body>\n</html>\n\n<!--\n\nTraceback (most recent call last):\n  File \"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\", line 1514, in wsgi_app\n    response = self.handle_exception(e)\n  File \"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask_cors/extension.py\", line 206, in wrapped_function\n    return cors_after_request(app_any.make_response(f(*args, **kwargs)))\n                                                    ~^^^^^^^^^^^^^^^^^\n  File \"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\", line 1511, in wsgi_app\n    response = self.full_dispatch_request()\n  File \"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\", line 919, in full_dispatch_request\n    rv = self.handle_user_exception(e)\n  File \"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask_cors/extension.py\", line 206, in wrapped_function\n    return cors_after_request(app_any.make_response(f(*args, **kwargs)))\n                                                    ~^^^^^^^^^^^^^^^^^\n  File \"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"/home/mohamed/coding/liveleaf-backend/.venv/lib64/python3.14/site-packages/flask/app.py\", line 902, in dispatch_request\n    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/home/mohamed/coding/liveleaf-backend/app/main.py\", line 390, in download_log_file\n    return send_from_directory(LOGS_DIR, safe_filename, as_attachment=True)\n           ^^^^^^^^^^^^^^^^^^^\nNameError: name 'send_from_directory' is not defined\n\n\n-->\n",
+      "time": 12,
+      "size": 17935,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347671221",
+    "timestamp": 1794347671221,
+    "request": {
+      "id": "1794347671208",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/5704918d_log_metrics.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 12,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347677485",
+    "timestamp": 1794347677485,
+    "request": {
+      "id": "1794347677470",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/5704918d_log_metrics.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-disposition": "attachment; filename=5704918d_log_metrics.csv",
+        "content-length": "1295",
+        "content-type": "text/csv; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 21:54:37 GMT",
+        "etag": "\"1794347580.5589025-1295-1829969035\"",
+        "last-modified": "Tue, 10 Nov 2026 21:53:00 GMT"
+      },
+      "body": "time,soil moisture(%),temperature(C),humidity(%),lamp(LDR Raw 0-4095),tank(%)\n2026-11-09 18:30:46,40.146519,20.000000,59.000000,1734,41.978024\n2026-11-09 18:31:30,39.877899,20.000000,59.000000,1739,2.417583\n2026-11-09 16:35:03,44.053722,21.000000,58.000000,2010,14.774116\n2026-11-09 19:07:01,100.000000,20.000000,60.000000,2032,0.000000\n1970-01-01 00:00:17,100.000000,20.000000,59.000000,2065,0.000000\n2026-11-09 19:11:49,100.000000,20.000000,59.000000,2055,0.000000\n2026-11-09 19:16:55,100.000000,20.000000,60.000000,2057,0.000000\n2026-11-09 19:19:17,100.000000,21.000000,60.000000,2046,0.000000\n2026-11-09 20:19:20,14.261292,20.000000,60.000000,502,70.012215\n2026-11-09 21:19:23,0.000000,20.000000,60.000000,431,88.522591\n2026-11-09 22:19:26,17.802200,20.000000,57.000000,437,67.838829\n2026-11-09 23:19:29,0.122101,-1.000000,-1.000000,407,69.157509\n2026-11-10 00:19:32,100.000000,20.000000,59.000000,411,0.000000\n2026-11-10 01:19:35,100.000000,20.000000,58.000000,498,0.000000\n2026-11-10 23:15:34,66.886444,-1.000000,-1.000000,893,9.401710\n2026-11-10 23:16:57,82.393158,-1.000000,-1.000000,49,0.000000\n2026-11-10 23:40:38,73.650795,-1.000000,-1.000000,571,8.547009\n2026-11-10 23:43:46,66.153847,-1.000000,-1.000000,1123,19.609280\n2026-11-10 23:47:43,68.766785,-1.000000,-1.000000,830,8.278389\n",
+      "time": 13,
+      "size": 1295,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347812088",
+    "timestamp": 1794347812088,
+    "request": {
+      "id": "1794347811877",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_watering_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "171",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 21:56:52 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"2758577c-98ba-4505-8625-75c2bf408b39\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'push_watering_log' executed successfully\"\n}\n",
+      "time": 210,
+      "size": 171,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347869549",
+    "timestamp": 1794347869549,
+    "request": {
+      "id": "1794347869336",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_watering_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "171",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 21:57:49 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"2b5e86f6-a6d7-4739-bfc0-f8815b828d4e\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'push_watering_log' executed successfully\"\n}\n",
+      "time": 211,
+      "size": 171,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347938643",
+    "timestamp": 1794347938643,
+    "request": {
+      "id": "1794347928503",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_watering_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 504,
+      "statusText": "GATEWAY TIMEOUT",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "53",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 21:58:58 GMT"
+      },
+      "body": "{\n  \"msg\": \"Device timeout. No response received.\"\n}\n",
+      "time": 10139,
+      "size": 53,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347941076",
+    "timestamp": 1794347941076,
+    "request": {
+      "id": "1794347940863",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_watering_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "228",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 21:59:01 GMT"
+      },
+      "body": "{\n  \"csv_url\": \"/download/logs/e47ded2c_log_watering.csv\",\n  \"device_response\": {\n    \"req_id\": \"361fa885-a856-473e-b358-1ca44b47f4f1\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'push_watering_log' executed successfully\"\n}\n",
+      "time": 212,
+      "size": 228,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347965189",
+    "timestamp": 1794347965189,
+    "request": {
+      "id": "1794347965178",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/e47ded2c_log_watering.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 21:59:25 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 10,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347991841",
+    "timestamp": 1794347991841,
+    "request": {
+      "id": "1794347991829",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000//download/logs/e47ded2c_log_watering.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 21:59:51 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 11,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794347995361",
+    "timestamp": 1794347995361,
+    "request": {
+      "id": "1794347995350",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/e47ded2c_log_watering.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 21:59:55 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 10,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348002493",
+    "timestamp": 1794348002493,
+    "request": {
+      "id": "1794348002483",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/5704918d_log_metrics.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 22:00:02 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 10,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348122361",
+    "timestamp": 1794348122361,
+    "request": {
+      "id": "1794348122350",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/5704918d_log_metrics.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 22:02:02 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 10,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348124037",
+    "timestamp": 1794348124037,
+    "request": {
+      "id": "1794348124028",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/5704918d_log_metrics.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 22:02:04 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 8,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348131243",
+    "timestamp": 1794348131243,
+    "request": {
+      "id": "1794348131029",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_watering_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "228",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:02:11 GMT"
+      },
+      "body": "{\n  \"csv_url\": \"/download/logs/21ad3955_log_watering.csv\",\n  \"device_response\": {\n    \"req_id\": \"6110e12a-3e7a-4a35-83c8-06e26500dba8\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'push_watering_log' executed successfully\"\n}\n",
+      "time": 213,
+      "size": 228,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348143486",
+    "timestamp": 1794348143486,
+    "request": {
+      "id": "1794348143474",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/21ad3955_log_watering.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 22:02:23 GMT"
+      },
+      "body": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "time": 10,
+      "size": 207,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348179978",
+    "timestamp": 1794348179978,
+    "request": {
+      "id": "1794348179965",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/21ad3955_log_watering.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-disposition": "attachment; filename=21ad3955_log_watering.csv",
+        "content-length": "182",
+        "content-type": "text/csv; charset=utf-8",
+        "date": "Tue, 10 Nov 2026 22:02:59 GMT",
+        "etag": "\"1794348131.1548357-182-2392399133\"",
+        "last-modified": "Tue, 10 Nov 2026 22:02:11 GMT"
+      },
+      "body": "time,delay(Seconds),amount(L)\n2026-11-09 20:19:23,3.000000,1.800000\n2026-11-09 21:19:26,3.000000,1.800000\n2026-11-09 22:19:29,3.000000,1.800000\n2026-11-09 23:19:32,3.000000,1.800000\n",
+      "time": 12,
+      "size": 182,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348385150",
+    "timestamp": 1794348385150,
+    "request": {
+      "id": "1794348385137",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:25 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 12,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348403343",
+    "timestamp": 1794348403343,
+    "request": {
+      "id": "1794348403330",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:43 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 11,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348404648",
+    "timestamp": 1794348404648,
+    "request": {
+      "id": "1794348404638",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:44 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 9,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348405133",
+    "timestamp": 1794348405133,
+    "request": {
+      "id": "1794348405120",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:45 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 12,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348405613",
+    "timestamp": 1794348405613,
+    "request": {
+      "id": "1794348405602",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:45 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 10,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348406028",
+    "timestamp": 1794348406028,
+    "request": {
+      "id": "1794348406015",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:46 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 12,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348406465",
+    "timestamp": 1794348406465,
+    "request": {
+      "id": "1794348406454",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:46 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 9,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348412728",
+    "timestamp": 1794348412728,
+    "request": {
+      "id": "1794348412715",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:52 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"6kq9ycaH7spKKGGDAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 11,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348417730",
+    "timestamp": 1794348417730,
+    "request": {
+      "id": "1794348417719",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "145",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:57 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [],\n    \"connected_count\": 0,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 10,
+      "size": 145,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348418722",
+    "timestamp": 1794348418722,
+    "request": {
+      "id": "1794348418712",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "145",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:06:58 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [],\n    \"connected_count\": 0,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 9,
+      "size": 145,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348423227",
+    "timestamp": 1794348423227,
+    "request": {
+      "id": "1794348423217",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "145",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:07:03 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [],\n    \"connected_count\": 0,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 9,
+      "size": 145,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348424072",
+    "timestamp": 1794348424072,
+    "request": {
+      "id": "1794348424059",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "145",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:07:04 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [],\n    \"connected_count\": 0,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 11,
+      "size": 145,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348464372",
+    "timestamp": 1794348464372,
+    "request": {
+      "id": "1794348464359",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:07:44 GMT"
+      },
+      "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"KIAzBzpy1Z0cbE6eAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+      "time": 11,
+      "size": 179,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348557387",
+    "timestamp": 1794348557387,
+    "request": {
+      "id": "1794348557171",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "167",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:09:17 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"e95d910c-069e-4232-b51e-fdb5bc9b5650\",\n    \"status\": \"failed\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 214,
+      "size": 167,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348576094",
+    "timestamp": 1794348576094,
+    "request": {
+      "id": "1794348570864",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 5\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "168",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:09:36 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"3c0aca85-f159-466d-bebd-d3a6f1e657de\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 5229,
+      "size": 168,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348589155",
+    "timestamp": 1794348589155,
+    "request": {
+      "id": "1794348581724",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "168",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:09:49 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"54c29389-b2f5-4fba-be20-a43742db4960\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 7430,
+      "size": 168,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794348610170",
+    "timestamp": 1794348610170,
+    "request": {
+      "id": "1794348602837",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "168",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:10:10 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"fb73d175-7cb8-42b7-964e-eb4fd7682fcc\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 7331,
+      "size": 168,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349161292",
+    "timestamp": 1794349161292,
+    "request": {
+      "id": "1794349161074",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "168",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:19:21 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"761db987-72a4-4336-8634-044310f40b22\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 216,
+      "size": 168,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349184422",
+    "timestamp": 1794349184422,
+    "request": {
+      "id": "1794349183808",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "168",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:19:44 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"cbb3adee-9ffb-4e96-a97d-d9d08209c721\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 612,
+      "size": 168,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349443116",
+    "timestamp": 1794349443116,
+    "request": {
+      "id": "1794349443004",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "168",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:24:03 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"412528e5-37ec-4300-ad4c-caf64081cfc0\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 111,
+      "size": 168,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349638943",
+    "timestamp": 1794349638943,
+    "request": {
+      "id": "1794349628802",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 504,
+      "statusText": "GATEWAY TIMEOUT",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "53",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:27:18 GMT"
+      },
+      "body": "{\n  \"msg\": \"Device timeout. No response received.\"\n}\n",
+      "time": 10139,
+      "size": 53,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349644596",
+    "timestamp": 1794349644596,
+    "request": {
+      "id": "1794349644385",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "168",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:27:24 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"c83a5d0e-5f54-4e51-bff3-7093e058ccee\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+      "time": 209,
+      "size": 168,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349885370",
+    "timestamp": 1794349885370,
+    "request": {
+      "id": "1794349885358",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"save_plant_data\",\n  \"data\":{\n    \"h_soil\": 70\n    \"l_soil\": 30\n    \"h_temp\": 23\n    \"l_temp\": 55\n    \"h_humi\": 23\n    \"l_humi\": 90\n    \"interval\": 2\n  }\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 400,
+      "statusText": "BAD REQUEST",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "34",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:31:25 GMT"
+      },
+      "body": "{\n  \"msg\": \"Action is required\"\n}\n",
+      "time": 10,
+      "size": 34,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349899018",
+    "timestamp": 1794349899018,
+    "request": {
+      "id": "1794349899007",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"save_plant_data\",\n  \"data\": {\n    \"h_soil\": 70\n    \"l_soil\": 30\n    \"h_temp\": 23\n    \"l_temp\": 55\n    \"h_humi\": 23\n    \"l_humi\": 90\n    \"interval\": 2\n  }\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 400,
+      "statusText": "BAD REQUEST",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "34",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:31:39 GMT"
+      },
+      "body": "{\n  \"msg\": \"Action is required\"\n}\n",
+      "time": 9,
+      "size": 34,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794349947732",
+    "timestamp": 1794349947732,
+    "request": {
+      "id": "1794349937590",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"save_plant_data\",\n  \"data\": {\n    \"h_soil\": 70,\n    \"l_soil\": 30,\n    \"h_temp\": 23,\n    \"l_temp\": 55,\n    \"h_humi\": 23,\n    \"l_humi\": 90,\n    \"interval\": 2\n  }\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 504,
+      "statusText": "GATEWAY TIMEOUT",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "53",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:32:27 GMT"
+      },
+      "body": "{\n  \"msg\": \"Device timeout. No response received.\"\n}\n",
+      "time": 10140,
+      "size": 53,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794350051301",
+    "timestamp": 1794350051301,
+    "request": {
+      "id": "1794350051086",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"save_plant_data\",\n  \"data\": {\n    \"h_soil\": 70,\n    \"l_soil\": 30,\n    \"h_temp\": 23,\n    \"l_temp\": 55,\n    \"h_humi\": 23,\n    \"l_humi\": 90,\n    \"interval\": 2\n  }\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "169",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:34:11 GMT"
+      },
+      "body": "{\n  \"device_response\": {\n    \"req_id\": \"bf76bb34-1e2e-4f23-aeb8-94ddd7fa3112\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'save_plant_data' executed successfully\"\n}\n",
+      "time": 213,
+      "size": 169,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1794351507580",
+    "timestamp": 1794351507580,
+    "request": {
+      "id": "1794351507365",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_watering_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "228",
+        "content-type": "application/json",
+        "date": "Tue, 10 Nov 2026 22:58:27 GMT"
+      },
+      "body": "{\n  \"csv_url\": \"/download/logs/344083c1_log_watering.csv\",\n  \"device_response\": {\n    \"req_id\": \"36334881-3f61-4a07-803c-baae8dcfad0b\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'push_watering_log' executed successfully\"\n}\n",
+      "time": 213,
+      "size": 228,
+      "cookies": []
+    }
+  }
+]

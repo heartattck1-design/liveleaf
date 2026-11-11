@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveLeaf Setup</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            background-color: #eee;
+        }
+
+        h1 {
+            font-size: x-large;
+            font-weight: 100;
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        form * {
+            display: block;
+            margin: 5px;
+            font-size: medium;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: large;
+            margin: 5;
+            padding: 0;
+        }
+
+        p {
+            font-style: italic;
+            color: gray;
+            margin: 10px;
+            padding: 5px;
+            border-left: gray 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>LiveLeaf First Setup Page</h1>
+    
+    <form action="javascript:void(0);">
+        <h2>Wifi Station Settings</h2>
+
+        <input type="text" name="ssid" id="ssid" required maxlength="31" placeholder="SSID">
+        <input type="password" name="pwd" id="pwd" required maxlength="63" minlength="8" placeholder="Password">        
+
+        <input type="submit" value="Save" onclick="submitWifiData()">
+        <p id="wifi_respond"></p>
+    </form>
+
+    <form action="javascript:void(0)">
+        <h2>WebServer and Remote Settings</h2>
+
+        <input type="token" name="token" id="token" required maxlength="256" placeholder="Auth Token">
+        <input type="text" name="url" id="url" required maxlength="256" placeholder="Backend IP">
+        
+        <input type="submit" value="Save" onclick="submitAuthToken()">
+        <p id="auth_respond"></p>
+    </form>
+
+    <form action="javascript:void(0)">
+        <h2>Soil Moisture Calibration</h2>
+        <input type="submit" value="Calibrate Wet Soil" onclick="calibrate('soil')">
+        <p>Add the sensor in the water then click Calibrate</p>
+        <p id="auth_respond"></p>
+    </form>
+    
+    <form action="javascript:void(0)">
+        <h2>Tank Water Level Calibration</h2>
+        <input type="submit" value="Calibrate Full Tank" onclick="calibrate('tank')">
+        <p>Fill 100% of the tank then click Calibrate</p>
+        <p id="auth_respond"></p>
+    </form>
+
+    <p>*Note: After you got respond "OK" you can reboot the device to start using it, you can change settings later using the liveleaf mobile application</p>
+
+    <script>
+        function submitWifiData(){
+            const ssid = document.getElementById("ssid").value;
+            const pwd = document.getElementById("pwd").value;
+
+            const body = {
+                "ssid": ssid,
+                "pwd": pwd
+            }
+
+            sendPost(body, "/setup/wifi", "wifi_respond")
+        }
+
+        function submitAuthToken(){
+            const token = document.getElementById("token").value;
+            const url = document.getElementById("url").value;
+
+            const body = {
+                "token": token,
+                "url": url
+            }
+
+            sendPost(body, "/setup/token", "auth_respond")
+        }
+
+        async function sendPost(body, endpoint, resultTagId) {
+
+            const response = await fetch(endpoint, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+            });
+
+            // if your server responds with text
+            const serverResponse = await response.text();
+
+            const msg = document.getElementById(resultTagId);
+            msg.innerText = `Server Response: ${serverResponse}`;
+        }
+
+        async function calibrate(type) {
+
+            const response = await fetch(`/calibrate/${type}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+            });
+
+            // if your server responds with text
+            const serverResponse = await response.text();
+
+            const msg = document.getElementById(resultTagId);
+            msg.innerText = `Server Response: ${serverResponse}`;
+        }
+    </script>
+
+</body>
+</html>

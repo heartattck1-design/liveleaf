@@ -4,6 +4,8 @@ export type OnboardingStep =
   | 'signup'
   | 'project-brief'
   | 'subscription'
+  | 'plant-setup'
+  | 'esp-waiting'
   | 'dashboard';
 
 export interface UserProfile {

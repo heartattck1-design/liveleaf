@@ -1,4 +1,4 @@
-import { Check, Crown, Sparkles, Star } from 'lucide-react';
+import { Check, Crown, Star } from 'lucide-react';
 
 interface SubscriptionPlansScreenProps {
   onSelectFree: () => void;

@@ -1,0 +1,732 @@
+{
+  "tabs": [
+    {
+      "id": "1794345419916vtu8",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "connection": "keep-alive",
+          "content-length": "29",
+          "content-type": "application/json",
+          "date": "Tue, 10 Nov 2026 21:22:14 GMT"
+        },
+        "body": "{\n  \"msg\": \"hello, World!\"\n}\n",
+        "time": 27,
+        "size": 29,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://127.0.0.1:5000/",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 0
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 27
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "17943457406649hqk",
+      "tabKind": "request",
+      "name": "New Request (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/user/signup",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"test\",\n  \"email\": \"test@test.test\",\n  \"password\": \"test\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 201,
+        "statusText": "CREATED",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "connection": "keep-alive",
+          "content-length": "324",
+          "content-type": "application/json",
+          "date": "Tue, 10 Nov 2026 21:30:01 GMT"
+        },
+        "body": "{\n  \"data\": {\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0\",\n    \"userid\": 1\n  },\n  \"msg\": \"Signup successful\"\n}\n",
+        "time": 24,
+        "size": 324,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://127.0.0.1:5000/user/signup",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": "{\n  \"name\": \"test\",\n  \"email\": \"test@test.test\",\n  \"password\": \"test\"\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 0
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 24
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "17943463368561kmy",
+      "tabKind": "request",
+      "name": "New Request (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"push_watering_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "connection": "keep-alive",
+          "content-length": "228",
+          "content-type": "application/json",
+          "date": "Tue, 10 Nov 2026 22:58:27 GMT"
+        },
+        "body": "{\n  \"csv_url\": \"/download/logs/344083c1_log_watering.csv\",\n  \"device_response\": {\n    \"req_id\": \"36334881-3f61-4a07-803c-baae8dcfad0b\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'push_watering_log' executed successfully\"\n}\n",
+        "time": 213,
+        "size": 228,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://127.0.0.1:5000/device/command",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+          },
+          "body": "{\n  \"action\": \"push_watering_log\"\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 0
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 213
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1794347605008z9mo",
+      "tabKind": "request",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/download/logs/21ad3955_log_watering.csv",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-disposition": "attachment; filename=21ad3955_log_watering.csv",
+          "content-length": "182",
+          "content-type": "text/csv; charset=utf-8",
+          "date": "Tue, 10 Nov 2026 22:02:59 GMT",
+          "etag": "\"1794348131.1548357-182-2392399133\"",
+          "last-modified": "Tue, 10 Nov 2026 22:02:11 GMT"
+        },
+        "body": "time,delay(Seconds),amount(L)\n2026-11-09 20:19:23,3.000000,1.800000\n2026-11-09 21:19:26,3.000000,1.800000\n2026-11-09 22:19:29,3.000000,1.800000\n2026-11-09 23:19:32,3.000000,1.800000\n",
+        "time": 12,
+        "size": 182,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://127.0.0.1:5000/download/logs/21ad3955_log_watering.csv",
+          "headers": {
+            "Accept": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 0
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 12
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "headers"
+    },
+    {
+      "id": "1794348376190dzh6",
+      "tabKind": "request",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "GET",
+      "url": "http://127.0.0.1:5000/device/connected",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"action\": \"push_sensor_log\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "responseTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "connection": "keep-alive",
+          "content-length": "179",
+          "content-type": "application/json",
+          "date": "Tue, 10 Nov 2026 22:07:44 GMT"
+        },
+        "body": "{\n  \"data\": {\n    \"active_sessions\": [\n      \"KIAzBzpy1Z0cbE6eAAAB\"\n    ],\n    \"connected_count\": 1,\n    \"user_id\": \"1\"\n  },\n  \"msg\": \"Connected devices retrieved successfully\"\n}\n",
+        "time": 11,
+        "size": 179,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://127.0.0.1:5000/device/connected",
+          "headers": {
+            "Accept": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 0
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 11
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "grpcMessages": [],
+      "grpcConfig": null,
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local"
+    },
+    {
+      "id": "179434855402081qm",
+      "tabKind": "request",
+      "name": "New Request (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "responseTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "connection": "keep-alive",
+          "content-length": "168",
+          "content-type": "application/json",
+          "date": "Tue, 10 Nov 2026 22:27:24 GMT"
+        },
+        "body": "{\n  \"device_response\": {\n    \"req_id\": \"c83a5d0e-5f54-4e51-bff3-7093e058ccee\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'start_watering' executed successfully\"\n}\n",
+        "time": 209,
+        "size": 168,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://127.0.0.1:5000/device/command",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+          },
+          "body": "{\n  \"action\": \"start_watering\",\n  \"duration\": 7\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 0
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 209
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "grpcMessages": [],
+      "grpcConfig": null,
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local"
+    },
+    {
+      "id": "17943497212645rj0",
+      "tabKind": "request",
+      "name": "New Request (copy) (copy) (copy) (copy)",
+      "method": "POST",
+      "url": "http://127.0.0.1:5000/device/command",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"action\": \"save_plant_data\",\n  \"data\": {\n    \"h_soil\": 70,\n    \"l_soil\": 30,\n    \"h_temp\": 23,\n    \"l_temp\": 55,\n    \"h_humi\": 23,\n    \"l_humi\": 90,\n    \"interval\": 2\n  }\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+        }
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "responseTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "connection": "keep-alive",
+          "content-length": "169",
+          "content-type": "application/json",
+          "date": "Tue, 10 Nov 2026 22:34:11 GMT"
+        },
+        "body": "{\n  \"device_response\": {\n    \"req_id\": \"bf76bb34-1e2e-4f23-aeb8-94ddd7fa3112\",\n    \"status\": \"success\"\n  },\n  \"msg\": \"Command 'save_plant_data' executed successfully\"\n}\n",
+        "time": 213,
+        "size": 169,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://127.0.0.1:5000/device/command",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDM0NjIwMSwianRpIjoiY2JmYjM1M2QtZjJmNS00MTEzLTgwMmYtYmE4YWMxZWJlMDlhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQzNDYyMDF9.VALB2WU2pI99cZzKrDKUBrBqWnh-Hsf1WkDbIQPQuu0"
+          },
+          "body": "{\n  \"action\": \"save_plant_data\",\n  \"data\": {\n    \"h_soil\": 70,\n    \"l_soil\": 30,\n    \"h_temp\": 23,\n    \"l_temp\": 55,\n    \"h_humi\": 23,\n    \"l_humi\": 90,\n    \"interval\": 2\n  }\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 0
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 213
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "grpcMessages": [],
+      "grpcConfig": null,
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local"
+    }
+  ],
+  "groups": [],
+  "activeTabId": "17943497212645rj0",
+  "currentView": "requests",
+  "sidebarTab": "collections",
+  "sidebarCollapsed": true,
+  "responseTab": "body",
+  "layoutMode": "horizontal",
+  "splitRatio": 0.5,
+  "horizontalSplitRatio": 0.48236383310347297,
+  "selectedMockServerId": null
+}
