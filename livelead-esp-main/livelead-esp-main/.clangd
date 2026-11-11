@@ -1,4 +1,0 @@
-CompileFlags:
-    Remove: [-f*, -m*]
-Diagnostics:
-  Suppress: [pp_file_not_found]
