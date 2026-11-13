@@ -1,83 +1,138 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 
 import App from '../../App';
 import { LoginPage } from '../auth/LoginPage';
 import { AuthLanding } from './AuthLanding';
+import { EspConnectionScreen } from './EspConnectionScreen';
+import { PlantSetupScreen } from './PlantSetupScreen';
 import { ProjectBriefScreen } from './ProjectBriefScreen';
 import { SignUpWizard } from './SignUpWizard';
 import { SubscriptionPlansScreen } from './SubscriptionPlansScreen';
-import { PlantSetupScreen } from './PlantSetupScreen';
-import { EspConnectionScreen } from './EspConnectionScreen';
-import { DEFAULT_USER, type OnboardingStep, type UserProfile } from './OnboardingState';
+import { ProfileSettingsPage } from '../dashboard/ProfileSettingsPage';
+import type { PlantProfile } from '../../types/plant';
+import {
+  loadStoredPlantProfile,
+  loadStoredUserProfile,
+  saveStoredPlantProfile,
+  saveStoredUserProfile,
+} from '../../services/profileStorage';
+import type { UserProfile } from './OnboardingState';
 
 export function OnboardingApp() {
-  const [step, setStep] = useState<OnboardingStep>('auth-landing');
-  const [user, setUser] = useState<UserProfile>(DEFAULT_USER);
+  const navigate = useNavigate();
+  const [user, setUser] = useState<UserProfile>(loadStoredUserProfile);
+  const [plant, setPlant] = useState<PlantProfile | null>(loadStoredPlantProfile);
 
-  const currentView = useMemo(() => {
-    switch (step) {
-      case 'auth-landing':
-        return (
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
           <AuthLanding
-            onShowLogin={() => setStep('login')}
-            onShowSignup={() => setStep('signup')}
+            onShowLogin={() => navigate('/login')}
+            onShowSignup={() => navigate('/signup')}
           />
-        );
-      case 'login':
-        return (
+        }
+      />
+      <Route
+        path="/login"
+        element={
           <LoginPage
-            onLogin={() => {
-              setUser((current) => ({ ...current, email: current.email || 'Grower' }));
-              setStep('plant-setup');
+            onLogin={(email) => {
+              const nextUser = { ...user, email };
+              setUser(nextUser);
+              saveStoredUserProfile(nextUser);
+              navigate('/plant-setup');
             }}
           />
-        );
-      case 'signup':
-        return (
+        }
+      />
+      <Route
+        path="/signup"
+        element={
           <SignUpWizard
             onComplete={(newUser) => {
               setUser(newUser);
-              setStep('project-brief');
+              saveStoredUserProfile(newUser);
+              navigate('/welcome');
             }}
           />
-        );
-      case 'project-brief':
-        return <ProjectBriefScreen onContinue={() => setStep('subscription')} />;
-      case 'subscription':
-        return (
+        }
+      />
+      <Route
+        path="/welcome"
+        element={
+          <ProjectBriefScreen
+            onContinue={() => navigate('/plans')}
+            onSkip={() => navigate('/plans')}
+          />
+        }
+      />
+      <Route
+        path="/plans"
+        element={
           <SubscriptionPlansScreen
             onSelectFree={() => {
-              setUser((current) => ({ ...current, planTier: 'Free' }));
-              setStep('plant-setup');
+              const nextUser = { ...user, planTier: 'Free' as const };
+              setUser(nextUser);
+              saveStoredUserProfile(nextUser);
+              navigate('/plant-setup');
             }}
             onSelectPremium={() => {
-              setUser((current) => ({ ...current, planTier: 'Premium' }));
-              setStep('plant-setup');
+              const nextUser = { ...user, planTier: 'Premium' as const };
+              setUser(nextUser);
+              saveStoredUserProfile(nextUser);
+              navigate('/plant-setup');
             }}
           />
-        );
-      case 'plant-setup':
-        return (
+        }
+      />
+      <Route
+        path="/plant-setup"
+        element={
           <PlantSetupScreen
-            onComplete={() => {
-              setStep('esp-waiting');
+            onComplete={(nextPlant) => {
+              setPlant(nextPlant);
+              saveStoredPlantProfile(nextPlant);
+              navigate('/connect');
             }}
           />
-        );
-      case 'esp-waiting':
-        return (
-          <EspConnectionScreen
-            onConnected={() => {
-              setStep('dashboard');
+        }
+      />
+      <Route
+        path="/connect"
+        element={<EspConnectionScreen onConnected={() => navigate('/dashboard')} />}
+      />
+      <Route
+        path="/dashboard"
+        element={
+          <App
+            user={user}
+            plant={plant}
+            onSignOut={() => navigate('/')}
+            onOpenSettings={() => navigate('/settings')}
+          />
+        }
+      />
+      <Route
+        path="/settings"
+        element={
+          <ProfileSettingsPage
+            user={user}
+            plant={plant}
+            onCancel={() => navigate('/dashboard')}
+            onSave={(nextUser, nextPlant) => {
+              saveStoredUserProfile(nextUser);
+              saveStoredPlantProfile(nextPlant);
+              setUser(nextUser);
+              setPlant(nextPlant);
+              navigate('/dashboard');
             }}
           />
-        );
-      case 'dashboard':
-        return <App user={user} onSignOut={() => setStep('auth-landing')} />;
-      default:
-        return null;
-    }
-  }, [step, user]);
-
-  return <>{currentView}</>;
+        }
+      />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
 }

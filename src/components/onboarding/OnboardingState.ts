@@ -1,13 +1,3 @@
-export type OnboardingStep =
-  | 'auth-landing'
-  | 'login'
-  | 'signup'
-  | 'project-brief'
-  | 'subscription'
-  | 'plant-setup'
-  | 'esp-waiting'
-  | 'dashboard';
-
 export interface UserProfile {
   name: string;
   email: string;
@@ -16,6 +6,8 @@ export interface UserProfile {
   experience: string;
   plantingGoal: string;
   planTier: 'Free' | 'Premium';
+  avatarDataUrl?: string;
+  appIconDataUrl?: string;
 }
 
 export const DEFAULT_USER: UserProfile = {

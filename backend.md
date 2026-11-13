@@ -240,6 +240,19 @@ Returns the authenticated user's plants with care thresholds.
 
 No plants → `200 OK` `{"msg": "No plants found for this user", "data": []}`. Missing JWT → `401`.
 
+### 4.4 Plant photo analysis
+
+#### `POST /plant/analysis`
+
+Analyzes an uploaded plant photo and returns plant identification, health/environment analysis, requirements, monitoring intervals, recommendations, device status, and sensor data used.
+
+* **Request:** `multipart/form-data`
+* **Photo field:** `image`
+* **Optional fields:** `common_name`, `scientific_name`
+* **Authentication:** The client sends the stored bearer token when available.
+
+The response contains the analysis under `analysis`, plus top-level `device_status`, `msg`, and `sensor_data_used`. The photo setup screen displays the result and waits for the user to continue to ESP32 connection.
+
 ---
 
 ## 5. Device REST API (control plane)
@@ -307,6 +320,8 @@ Latest sensor reading pushed by the device (kept in memory).
 ```
 
 No data yet → `404 {"msg": "No telemetry received yet"}`.
+
+The dashboard polls this endpoint every 10 seconds. Its 24-hour, 3-day, and 7-day analytics are calculated from distinct `received_at` samples collected in the open dashboard session; the endpoint does not provide historical readings, so a page reload starts a new chart history.
 
 ---
 
@@ -390,6 +405,8 @@ sequenceDiagram
 ```json
 { "temp": 24.5, "humi": 51.0, "lamp": 2300, "soil": 1870, "tank": 3100, "cmd_id": "a1b2c3d4" }
 ```
+
+The onboarding screen's advanced IP option checks `http://<ESP32-IP>/read` directly from the browser. The device must be reachable on the same network and its HTTP server must allow the app's origin via CORS; otherwise, connect the ESP32 to the backend using the WebSocket flow.
 
 | Field | Type | Description |
 | --- | --- | --- |

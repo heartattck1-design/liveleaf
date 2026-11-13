@@ -1,10 +1,29 @@
 import { ArrowRight, Leaf, Radio, Wifi } from 'lucide-react';
 
-export function PipelineVisualizer() {
+interface PipelineVisualizerProps {
+  hasTelemetry: boolean;
+}
+
+export function PipelineVisualizer({ hasTelemetry }: PipelineVisualizerProps) {
   const stages = [
-    { title: 'Sensors', icon: Leaf, accent: 'bg-emerald-100 text-emerald-700' },
-    { title: 'Gateway', icon: Wifi, accent: 'bg-sky-100 text-sky-700' },
-    { title: 'State', icon: Radio, accent: 'bg-violet-100 text-violet-700' },
+    {
+      title: 'Sensors',
+      description: hasTelemetry ? 'Latest device packet received' : 'Waiting for sensor packet',
+      icon: Leaf,
+      accent: 'bg-emerald-100 text-emerald-700',
+    },
+    {
+      title: 'Gateway',
+      description: hasTelemetry ? 'Backend telemetry available' : 'No device telemetry available',
+      icon: Wifi,
+      accent: 'bg-sky-100 text-sky-700',
+    },
+    {
+      title: 'Analytics',
+      description: hasTelemetry ? 'Calculations use received samples' : 'Waiting for readings',
+      icon: Radio,
+      accent: 'bg-violet-100 text-violet-700',
+    },
   ];
 
   return (
@@ -26,7 +45,7 @@ export function PipelineVisualizer() {
 
               <div className="flex-1">
                 <p className="font-semibold text-slate-700">{stage.title}</p>
-                <p className="text-xs text-slate-500">Status signal synced</p>
+                <p className="text-xs text-slate-500">{stage.description}</p>
               </div>
 
               {index < stages.length - 1 && <ArrowRight className="text-slate-400" size={18} />}

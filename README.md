@@ -2,6 +2,21 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
+## Application pages
+
+The app uses React Router DOM for browser-history navigation:
+
+| Path | Page |
+| --- | --- |
+| `/` | Sign-in or sign-up landing |
+| `/login` | Login |
+| `/signup` | Account creation |
+| `/welcome` | LiveLeaf project brief |
+| `/plans` | Subscription selection |
+| `/plant-setup` | Plant identification |
+| `/connect` | ESP32 connection |
+| `/dashboard` | LiveLeaf dashboard |
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)

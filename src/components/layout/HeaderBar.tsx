@@ -1,4 +1,4 @@
-import { MoonStar, RotateCcw, Radio, SunMedium } from 'lucide-react';
+import { MoonStar, RotateCcw, Radio, Settings2, SunMedium, UserRound } from 'lucide-react';
 
 import { LiveleafLogo } from './LiveleafLogo';
 
@@ -9,8 +9,11 @@ interface HeaderBarProps {
   onReset: () => void;
   onToggleStream: () => void;
   onSignOut: () => void;
+  onOpenSettings: () => void;
   userName?: string;
   planTier?: string;
+  avatarUrl?: string;
+  appIconUrl?: string;
 }
 
 export function HeaderBar({
@@ -20,8 +23,11 @@ export function HeaderBar({
   onReset,
   onToggleStream,
   onSignOut,
+  onOpenSettings,
   userName,
   planTier,
+  avatarUrl,
+  appIconUrl,
 }: HeaderBarProps) {
   const isDark = theme === 'dark';
 
@@ -35,9 +41,16 @@ export function HeaderBar({
       ].join(' ')}
     >
       <div className="flex flex-wrap items-center gap-4">
-        <LiveleafLogo />
+        <LiveleafLogo iconSrc={appIconUrl} />
         {userName && (
           <div className="flex items-center gap-2">
+            <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-emerald-100 text-emerald-700">
+              {avatarUrl ? (
+                <img src={avatarUrl} alt="" className="h-full w-full object-cover" />
+              ) : (
+                <UserRound className="h-5 w-5" />
+              )}
+            </div>
             <span className={['text-sm font-medium', isDark ? 'text-slate-300' : 'text-slate-600'].join(' ')}>
               Welcome back, <strong className={isDark ? 'text-emerald-400' : 'text-emerald-700'}>{userName}</strong>! 🌿
             </span>
@@ -51,6 +64,22 @@ export function HeaderBar({
       </div>
 
       <div className="ml-auto flex items-center gap-3">
+        <button
+          type="button"
+          onClick={onOpenSettings}
+          aria-label="Open profile and plant settings"
+          title="Profile and plant settings"
+          className={[
+            'inline-flex items-center gap-2 rounded-full border px-3 py-2 text-sm font-medium transition',
+            isDark
+              ? 'border-slate-600 bg-slate-800 text-slate-100 hover:bg-slate-700'
+              : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50',
+          ].join(' ')}
+        >
+          <Settings2 size={15} />
+          <span className="hidden sm:inline">Settings</span>
+        </button>
+
         <button
           type="button"
           onClick={onToggleTheme}

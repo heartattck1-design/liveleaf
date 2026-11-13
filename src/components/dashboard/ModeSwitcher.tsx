@@ -1,6 +1,8 @@
+import type { ViewMode } from '../../types/telemetry';
+
 interface ModeSwitcherProps {
-  activeTab: 'user-friendly' | 'analytics' | 'ai-chat';
-  onChange: (tab: 'user-friendly' | 'analytics' | 'ai-chat') => void;
+  activeTab: ViewMode;
+  onChange: (tab: ViewMode) => void;
   theme: 'light' | 'dark';
 }
 
@@ -46,21 +48,6 @@ export function ModeSwitcher({ activeTab, onChange, theme }: ModeSwitcherProps) 
         Advanced Analytics
       </button>
 
-      <button
-        type="button"
-        onClick={() => onChange('ai-chat')}
-        className={`rounded-full px-4 py-2.5 text-sm font-semibold transition ${
-          activeTab === 'ai-chat'
-            ? isDark
-              ? 'bg-emerald-400 text-slate-950 shadow-sm'
-              : 'bg-emerald-500 text-white shadow-sm'
-            : isDark
-              ? 'text-emerald-400 hover:bg-slate-800'
-              : 'text-emerald-700 hover:bg-emerald-50'
-        }`}
-      >
-        🌱 AI Assistant & Metrics
-      </button>
     </div>
   );
 }

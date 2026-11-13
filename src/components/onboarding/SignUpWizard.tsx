@@ -2,6 +2,7 @@ import { ArrowRight, Calendar, LockKeyhole, Mail, Target, User } from 'lucide-re
 import { useState } from 'react';
 
 import { BACKEND_BASE_URL } from '../../config';
+import { getOptionalBearerHeaders, saveAccessToken } from '../../services/api';
 import { LiveleafLogo } from '../layout/LiveleafLogo';
 import { type UserProfile } from './OnboardingState';
 
@@ -35,7 +36,10 @@ export function SignUpWizard({ onComplete }: SignUpWizardProps) {
 
       const response = await fetch(`${BACKEND_BASE_URL}/user/signup`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...getOptionalBearerHeaders(),
+        },
         body: JSON.stringify(payload),
       });
 
@@ -48,9 +52,11 @@ export function SignUpWizard({ onComplete }: SignUpWizardProps) {
         throw new Error(backendMessage);
       }
 
-      if (responseData?.data?.token) {
-        localStorage.setItem('liveleaf_token', responseData.data.token);
+      const token = responseData?.data?.token;
+      if (!token) {
+        throw new Error('Signup response did not include an access token.');
       }
+      saveAccessToken(token);
 
       onComplete({
         ...formData,

@@ -2,6 +2,7 @@ import { ArrowRight, Leaf, Sparkles, Wifi } from 'lucide-react';
 
 interface ProjectBriefScreenProps {
   onContinue: () => void;
+  onSkip: () => void;
 }
 
 const pillars = [
@@ -22,7 +23,7 @@ const pillars = [
   },
 ];
 
-export function ProjectBriefScreen({ onContinue }: ProjectBriefScreenProps) {
+export function ProjectBriefScreen({ onContinue, onSkip }: ProjectBriefScreenProps) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#EDF6EE] text-slate-800">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(65,170,95,0.12),_transparent_42%)]" />
@@ -41,6 +42,7 @@ export function ProjectBriefScreen({ onContinue }: ProjectBriefScreenProps) {
           </div>
           <button
             type="button"
+            onClick={onSkip}
             className="rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-white"
           >
             Skip

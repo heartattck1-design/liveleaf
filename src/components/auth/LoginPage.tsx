@@ -2,10 +2,11 @@ import { ArrowRight, Eye, EyeOff, LockKeyhole, User } from 'lucide-react';
 import { useState } from 'react';
 
 import { BACKEND_BASE_URL } from '../../config';
+import { getOptionalBearerHeaders, saveAccessToken } from '../../services/api';
 import { LiveleafLogo } from '../layout/LiveleafLogo';
 
 interface LoginPageProps {
-  onLogin: () => void;
+  onLogin: (email: string) => void;
 }
 
 export function LoginPage({ onLogin }: LoginPageProps) {
@@ -31,6 +32,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          ...getOptionalBearerHeaders(),
         },
         body: JSON.stringify({
           email: email.trim(),
@@ -47,12 +49,14 @@ export function LoginPage({ onLogin }: LoginPageProps) {
       }
 
       const token = payload?.data?.token;
-      if (token) {
-        localStorage.setItem('liveleaf_token', token);
+      if (!token) {
+        throw new Error('Login response did not include an access token.');
       }
 
+      saveAccessToken(token);
+
       setIsSubmitting(false);
-      onLogin();
+      onLogin(email.trim());
     } catch (loginError) {
       const message = loginError instanceof Error ? loginError.message : 'Unable to reach the LiveLeaf backend.';
       setError(message);
